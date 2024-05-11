@@ -123,7 +123,7 @@ const employeeregistration = async (e) => {
         const responseData = await response.json();
         console.log(responseData);
         localStorage.setItem("user", JSON.stringify(responseData.user));
-        navigate('/dashboard');
+        navigate('/payment');
       } else {
       return alert('existing user is found with same email address');
       }

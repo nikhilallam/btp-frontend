@@ -143,7 +143,7 @@ const companyregistration = async (e) => {
       if (response.ok) {
         const responseData = await response.json();
         localStorage.setItem("company", JSON.stringify(responseData.company));
-        navigate('/company-dashboard');
+        navigate('/payment');
       } else {
         return alert('existing company is found with same email address');
       }

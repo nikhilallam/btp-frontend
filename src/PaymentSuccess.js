@@ -8,9 +8,9 @@ function PaymentSuccess() {
   return (
     <Box>
         <VStack h = "100vh" justifyContent={"center"} >
-            <Heading textTransform ={"uppercase"}> Order Successful </Heading>
+            <Heading textTransform ={"uppercase"}> Payment Successful </Heading>
             <Text>
-                Reference No. {referenceNum}
+                Reference No. {referenceNum || "9897-822346566789-4193"}
             </Text>
             
         </VStack>

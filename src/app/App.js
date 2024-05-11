@@ -19,6 +19,7 @@ import Login from '../login/login.js';
 import NewRegistration from "../NewHire/NewRegistration.js";
 import Dashboard from "../Dashboard/dashboard.js";
 import CompanyDashboard from '../CompanyDashboard/companyDashboard.js'
+import Payment from "../Payment.js";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
           <Route path = "/newregistration" element = {<NewRegistration/>} />
           <Route path = "/dashboard" element ={<Dashboard/>} /> 
           <Route path = "/company-dashboard" element ={<CompanyDashboard />} /> 
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/payment-success" element={<PaymentSuccess />} />
           <Route path ='*' element = {<NotFoundPage/>} />
         </Routes>
 
