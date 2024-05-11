@@ -1,0 +1,64 @@
+.page {
+    position: relative;
+}
+
+.page>div {
+    position: absolute;
+    background: var(--bg-color);
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+/* src/App.css */
+
+.App {
+    text-align: center; 
+  }
+  
+  .about-us-container {
+    padding: 20px; 
+    justify-content: space-between;
+  }
+  
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-us-image {
+    max-width: 49%;
+  }
+  .about-us-image img {
+     max-width: 45%;
+     margin-bottom: 20px;
+  }
+  
+  .about-us-text {
+    text-align: justify;
+    font-size: 18px;
+    max-width: 100%;
+    /* margin-right: 40px; */
+  }
+  
+  .about-us-text h2 {
+    color: #407b9c;
+  }
+  
+  .about-us-text p {
+    color: #407b9c;
+  }
+  
+  @media (min-width: 768px) {
+    .about-us-content {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .about-us-text {
+      width: 50%;
+      margin-right: 20px;
+    }
+  }
+  
